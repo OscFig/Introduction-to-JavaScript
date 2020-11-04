@@ -1,5 +1,7 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
+import { parse } from "@babel/core";
+
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
 /*
@@ -17,8 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 19;
 
-
+if(votingAge > 18){
+ console.log(true)
+} 
 
 /*
 Task 1b - Values
@@ -30,24 +35,24 @@ Do the following:
 
    HINT: no function required
 */
+let num1 = 3;
+let num2 = 4;
 
-
-
-
-
+if(num1 === num2){
+  num1 = 4
+  
+}
 /*
-Task 1c - Convert Strings to Numbers
+// Task 1c - Convert Strings to Numbers
 
-Do the following:   
-   1. Declare a string type variable with the value of "1999"
-   2. Convert the string value of "1999" to a integer value of 1999
-   3. Return the result
+// Do the following:   
+//    1. Declare a string type variable with the value of "1999"
+//    2. Convert the string value of "1999" to a integer value of 1999
+//    3. Return the result
 
-   HINT: look up the Number method
+//    HINT: look up the Number method
 */
-
-
-
+let string = parseFloat('1999');
 
 /*
 Task 1d - Multiply
@@ -61,7 +66,7 @@ Do the following:
 function multiply(a, b){
     return a * b;
   }
-  multiply(3,3) 
+  multiply(3,3)
 
 
 
@@ -75,10 +80,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+  return age * 7;
+    
 }
-
+dogYears(2)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -108,8 +114,8 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight){
+    
   }
 
 
