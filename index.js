@@ -22,8 +22,10 @@ Do the following:
 let votingAge = 19;
 
 if(votingAge > 18){
- console.log(true)
-} 
+ console.log(true);
+} else {
+  console.log(false);
+}
 
 /*
 Task 1b - Values
@@ -82,7 +84,6 @@ Do the following:
 
 function dogYears(age){
   return age * 7;
-    
 }
 dogYears(2)
 
@@ -114,10 +115,10 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight){
-    
+function hungryDog(lbs, age){
+    return lbs * age
   }
-
+hungryDog(5, 3/12)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -140,7 +141,7 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    // if (user)
 }
   
   
@@ -156,11 +157,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    return km * .621371
   }
 
-
+miles(10)
 
 //Task 5b - Feet to CM
 /*
@@ -170,11 +171,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48
   }
- 
-
+ feet(10)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -206,10 +206,20 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(score){
+    if(score >= 90){
+       return 'A';
+    } else if(score >= 80 && score <= 89){
+       return 'you got a B';
+    } else if(score >= 70 && score <= 79){
+       return 'C';
+    } else if(score >= 60 && score <= 69){
+       return 'D';
+    } else if (score > 60){
+      return 'F';
+    }
   }
-  
+  grade(85)
   
   
   
